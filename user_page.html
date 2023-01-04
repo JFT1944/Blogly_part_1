@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{userpage.first_name}} {{userpage.last_name}} <a style="font-size:15px" href="/users/{{userpage.id}}/edit">edit</a></h1>
+<img src="{{userpage.image_url}}" alt="">
+<h2>{{userpage.image_url}}</h2>
+<img src="https://i.imgur.com/qoMhr0U.jpg" alt="">
+<!-- <h1>{{userpage[0]}} {{userpage[1]}}</h1> -->
+{% endblock %}
